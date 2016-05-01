@@ -1,3 +1,5 @@
 from django.contrib import admin
 
-# Register your models here.
+import models
+
+admin.site.register([models.Plan, models.Milestone, models.Commitment, models.CommitmentMilestone])

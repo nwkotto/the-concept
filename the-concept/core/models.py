@@ -8,8 +8,8 @@ import autoslug
 class Base(models.Model):
     name = models.CharField(null=True, blank=True, max_length=200)
     slug = autoslug.AutoSlugField(null=True, blank=True, populate_from="name")
-    created = models.DateTimeField()
-    updated = models.DateTimeField()
+    created = models.DateTimeField(blank=True)
+    updated = models.DateTimeField(blank=True)
 
     def save(self, *args, **kwargs):
         if not self.created:
