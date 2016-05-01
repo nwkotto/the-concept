@@ -42,9 +42,9 @@ INSTALLED_APPS = [
     'rest_framework',
 
     # Internal apps
-    'board',
-    'concept',
     'core',
+    'concept',
+    'board',
     'plan'
 ]
 
